@@ -218,7 +218,7 @@ func regexGrep(content string, Burl string) {
 		r := regexp.MustCompile(element)
 		matches := r.FindAllString(content, -1)
 		for _, v := range matches {
-			fmt.Println("[+] Found " + "[" + key + "]" + "	[" + v + "]" + "	[" + Burl + "]")
+			fmt.Println("[" + key + "]" + "	[" + v + "]" + "	[" + Burl + "]")
 		}
 	}
 
